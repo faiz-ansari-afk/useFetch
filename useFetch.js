@@ -1,6 +1,8 @@
+//Learned from NetNinja
 import { useState, useEffect, useRef } from 'react';
 
-//abort fetch req, cleanup func
+//_options are'nt in use, may be in future I will update the code.
+
 export const useFetch = (url,_options) => {
     const [data, setData] = useState(null);
     const [isPending, setIsPending] = useState(false)
